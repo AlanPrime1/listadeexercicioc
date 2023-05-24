@@ -8,12 +8,10 @@ int main()
     int idade;
     float nota1, nota2, nota3, media;
 
-
     printf("Digite seu nome:");
     scanf("%s", &nome);
 
     fflush(stdin);
-
 
     printf("Digite sua idade:");
     scanf("%d", &idade);
@@ -27,12 +25,20 @@ int main()
     printf("Digite a nota 3:");
     scanf("%f", &nota3);
 
-    media = (nota1+nota2+nota3)/3;
+    media = (nota1 + nota2 + nota3) / 3;
 
     printf("O nome da pessoa e:  %s \n", nome);
     printf("Idade e: %d \n", idade);
     printf("A media e: %f \n", media);
 
+    if (media >= 7)
+    {
+        printf("Aprovado!");
+    }
+    else
+    {
+        printf("Reprovado!");
+    }
 
     return 0;
 }
